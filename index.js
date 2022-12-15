@@ -79,11 +79,20 @@ function fetchProducts() {
       .then((response) => response.json())
       .then((data) => data);
   }
-  
+
 //fetching specific product ID 
 function fetchId(id){
     return fetch(`https://linet-db-production.up.railway.app/products/${id}`)
     .then((response) => response.json())
     .then((data) => data);
 }
+
+//iterating through the product array
+function displayData() {
+    fetchProducts().then((projectArray) => {
+      projectArray.map((currentObject) => {
+        createList(currentObject);
+      });
+    });
+  }
   
