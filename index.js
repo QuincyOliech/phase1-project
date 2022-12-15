@@ -14,7 +14,6 @@ let id=0
 let totalNumberOfItemsSold=0
 
 //adding event listener to the DOM
-
 document.addEventListener("DOMContentLoaded", (e) => {
     displayData();
     menu.addEventListener('click',(e)=>{
@@ -38,3 +37,20 @@ document.addEventListener("DOMContentLoaded", (e) => {
       });
     });
   });
+
+  //creating list element and returning the text content of the specified node
+function createList(products) {
+    let newList = document.createElement("li");
+    newList.textContent = products.brand;
+    newList.className = "productItem";
+    newList.addEventListener("click", (e) => {
+      productImage.setAttribute("src", products.picture);
+      brandName.textContent = products.brand;
+      itemDescription.textContent = products.description;
+      productPrice.textContent = products.price;
+      productNumber.textContent = products.totalItems - products.itemsSold;
+      id=products.id
+      
+    });
+    dividedList.appendChild(newList);
+  }
