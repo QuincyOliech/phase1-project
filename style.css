@@ -5,7 +5,7 @@
     font-family: "Kumbh Sans", sans-serif;
     background-color: #141414;
   }
-  
+
   /* navbar section */
 .navbar {
     background: #131313;
@@ -127,3 +127,21 @@
     margin-top: 10%;
     font-size: 25px;
   }
+
+/* images list section*/
+.dividedList{
+    color:plum;
+    margin-right: 50px;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 10px;
+    list-style: none;
+  }
+  .dividedList:hover {
+    color: purple;
+    transition: all 0.3s ease;
+  }
+  .productItem{
+    cursor: pointer;
+  }
+  
