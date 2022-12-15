@@ -145,3 +145,30 @@
     cursor: pointer;
   }
   
+  /* product info styling */
+.productImages{
+    margin-bottom: 100px;
+  }
+  .productInfo{
+    margin-right: 30px;
+    padding-left: 1.5rem;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:plum;
+  }
+  #description{
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px;
+  }
+  #price{
+    color: orange;
+    margin: 10px;
+  }
+  .photo{
+    color: #fff;
+    font-size: 20px;
+    margin: 10px;
+  }
