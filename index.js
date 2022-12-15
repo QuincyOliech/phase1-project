@@ -72,10 +72,18 @@ document.addEventListener('keyup',(e)=>{
       }
     }
   })
-  
+
   //fetching product data from json file
 function fetchProducts() {
     return fetch("https://linet-db-production.up.railway.app/products")
       .then((response) => response.json())
       .then((data) => data);
   }
+  
+//fetching specific product ID 
+function fetchId(id){
+    return fetch(`https://linet-db-production.up.railway.app/products/${id}`)
+    .then((response) => response.json())
+    .then((data) => data);
+}
+  
